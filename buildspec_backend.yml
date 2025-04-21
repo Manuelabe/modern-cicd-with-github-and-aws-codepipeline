@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - |
-        if [[ "$BRANCH_NAME" == main* ]]; then
+        if [[ "$BRANCH_NAME" == main ]]; then
           DEPLOY_ENV="stage";
         elif [[ "$BRANCH_NAME" == feature* ]]; then
           DEPLOY_ENV="dev";
